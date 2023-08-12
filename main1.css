@@ -17,9 +17,16 @@ html{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+	
 }
 body{
     line-height: 1.6;
+	
+}
+.header{
+	
+	padding:80px;
+	
 }
 img{
     width: 100%;
@@ -45,20 +52,69 @@ h3{
 h2 span{
 	color:red;
 }
-.validation{
-	position:absolute;
-	bottom:0;
-	left:0;
+
+/********************* Contact us form *********************/
+
+.Container{
+	border-style:solid;
+	border-color:white;
+	width:400px;
+	color:gray;
+	
 }
-.validation h2{
-	color:#9FE2BF;
+.Container h1{
+	color:white;
+	text-align:center;
+	
+	background-color:gray;
 }
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+}
+
+.error {
+    color: red;
+}
+
+
+
+/****************************************************/
+
 #about{
-	padding:80px;
+	
 	color:black;
 	background-color:#CCCCFF;
 	text-height:1.8;
+	padding:80px;
+	
+
 }
+
 .row{
 	display:flex;
 	justify-content:space-between;
@@ -68,27 +124,37 @@ h2 span{
 	flex-basis:35%;
 }
 .about-col-1 img{
-	width:100%;
+	width:700px;
 	border-radius:0;
+	height:100%;
 }
 .about-col-2{
-	flex-basis:100%;
-	background: rgb(120, 120, 120);
+	flex-basis:45%;
+	background:transparent;
     font-size: 40px;
     font-weight: 100;
 	color:white;
     opacity: 0.9;
-    width: 10vw;
-    margin: 10px auto 10px auto;
-    text-align: center;
+    width: 110px;
+    margin: 0;
+    text-align:center;
 	
 }
 .about-col-2 h1{
-	color:black;
-	font-size:30px;
+	color:red;
+	font-size:50px;
 	text-decoration:underline;
 	text-height:200%
 }
+.about-col-2 p{
+	
+	color:black;
+	font-size:30px;
+	text-height:1.8;
+	text-align:center;
+	
+}
+
 .about-quotes{
 	font-weight:bold;
 	flex-basis:70%;
@@ -105,9 +171,9 @@ h2 span{
 	color:red;
 }
 .transbox{
-	margin:20px;
+	margin:0px;
 	background-color:#ffffff;
-	border:1px;
+	border:0px;
 	opacity:0.6;
 }
 .transbox h3,h1{
@@ -313,6 +379,7 @@ blockquote span{
 .section-one{
     margin: 40px 0;
     min-height: 100vh;
+	padding:10px;
 }
 .sec-one-left{
     height: 100vh;
@@ -422,6 +489,7 @@ blockquote span{
 /* section two */
 .section-two{
     margin: 40px 0;
+	padding:10px;
 }
 .section-two h2{
     text-align: center;
@@ -467,6 +535,7 @@ blockquote span{
 /* section three */
 .section-three{
     margin: 40px 0;
+	padding:80px;
 }
 .single-img{
     position: relative;
@@ -496,6 +565,7 @@ blockquote span{
 /* section four */
 .section-four{
     margin: 40px 0;
+	padding:80px;
 }
 .blog{
     margin: 40px 0;
@@ -532,6 +602,7 @@ blockquote span{
 .wrapper {
   overflow: hidden;
   white-space: nowrap;
+  padding:80px;
 }
 
 .flowers {
@@ -601,6 +672,7 @@ blockquote span{
 /* section five */
 .section-five{
     margin: 40px 0;
+	padding:80px;
 }
 .section-five .container div{
     margin: 20px 0;
@@ -661,8 +733,9 @@ blockquote span{
 .contact{
     background: var(--dark);
     color: #fff;
-    padding: 40px 0;
+    padding: 80px 0;
     text-align: center;
+	
 }
 .contact-container > div{
     margin: 40px 0;
@@ -685,40 +758,17 @@ blockquote span{
 	justify-content:justify;
 	color:#1589FF
 }
-.social-icons{
-    width: 350px;
-    margin: 40px auto 0 auto;
-    padding-bottom: 30px;
-}
-.social-icons ul a{
-    color: #fff;
-    font-size: 30px;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition);
-}
-.social-icons ul{
-    display: flex;
-    justify-content: space-around;
-}
-.social-icons ul a:hover{
-    background: var(--lightGreen);
-    border-color: var(--lightGreen);
-}
 
-.fa{
-   padding: 20px;
+
+
+.fa-brands{
+   padding: 0px;
    font-size: 30px;
-   width: 50px;
+   width: 60px;
    text-align: center;
    text-decoration: none;
-   margin: 5px 2px;
+   margin: 0px 0px;
+   border-radius:70px;
 }
 .fa:hover{
 	opacity:0.7;

@@ -58,13 +58,35 @@ function validateForm(){
 //****************************************************************
 
 //Hover Image
-function ChangeImage(x, image) {
-    if (x == 1) {
-        image.src = 'images/h2.jpeg';
-    }
-    if (x == 2) {
-        image.src = 'images/h3.jpeg';
-    }
-}
+function ChangeImage(imageNumber, imgElement) {
+            if (imageNumber === 1) {
+                imgElement.src = "images/h2.jpeg";
+            } else if (imageNumber === 2) {
+                imgElement.src = "images/h1.jpeg";
+            }
 
 //****************************************************************
+
+//Contact us form*************************************************
+const showFormButton = document.getElementById("showFormButton");
+const formContainer = document.getElementById("formContainer");
+
+showFormButton.addEventListener("click",() => {
+	formContainer.style.display = "block";
+});
+
+//login & register form*******************************************
+let signup = document.querySelector(".signup");
+let login = document.querySelector(".login");
+let slider = document.querySelector(".slider");
+let formSection = document.querySelector(".form-section");
+
+signup.addEventListener("click", () => {
+	slider.classList.add("moveslider");
+	formSection.classList.add("form-section-move");
+});
+
+login.addEventListener("click", () => {
+	slider.classList.remove("moveslider");
+	formSection.classList.remove("form-section-move");
+});
